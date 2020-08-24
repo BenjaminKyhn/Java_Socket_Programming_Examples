@@ -1,4 +1,4 @@
-# Java_Socket_Programming_Examples
+# Java Socket Programming Examples
 
 Link to tutorial:
 // https://cs.lmu.edu/~ray/notes/javanetexamples/
