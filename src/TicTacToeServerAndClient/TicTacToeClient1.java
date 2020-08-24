@@ -8,7 +8,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class TicTacToeClient {
+public class TicTacToeClient1 {
     private JFrame frame = new JFrame("Tic Tac Toe");
     private JLabel messageLabel = new JLabel("...");
 
@@ -19,7 +19,7 @@ public class TicTacToeClient {
     private Scanner in;
     private PrintWriter out;
 
-    public TicTacToeClient(String serverAddress) throws Exception{
+    public TicTacToeClient1(String serverAddress) throws Exception{
         socket = new Socket(serverAddress, 58901);
         in = new Scanner(socket.getInputStream());
         out = new PrintWriter(socket.getOutputStream(), true);
@@ -103,7 +103,7 @@ public class TicTacToeClient {
     }
 
     public static void main(String[] args) throws Exception{
-        TicTacToeClient client = new TicTacToeClient("localhost");
+        TicTacToeClient1 client = new TicTacToeClient1("localhost");
         client.frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         client.frame.setSize(320, 320);
         client.frame.setVisible(true);
